@@ -1,0 +1,17 @@
+plot(0, 0, type="l",axes=F, xlab="", ylab="",xlim=c(-4,4),ylim=c(-4,4),asp=1)
+theta <- seq(0,2*pi, length=400)
+x1 <- 2*cos(theta)
+y1 <- 2*sin(theta)+1
+x2 <- 2*cos(theta)
+y2 <- 2*sin(theta)+-1
+
+polygon(x1,y1, col=rgb(226, 208, 0, 150, max=255),lwd=2,border=rgb(226, 208, 0, max=255))
+polygon(x2,y2, col=rgb(129, 215, 66, 150, max=255),lwd=2,border=rgb(129, 215, 66, max=255)) 
+polygon(x1,y1, col=rgb(226, 208, 0, 50, max=255),lwd=2,border=rgb(226, 208, 0, max=255))
+
+polygon(x1,y1, col=rgb(226, 208, 0,max=255),density=10,,lwd=2)
+polygon(x2,y2, col=rgb(129, 215, 66, max=255),density=10,angle=-45,,lwd=2) 
+polygon(x1,y1, col=rgb(226, 208, 0,max=255),density=5,,lwd=2)
+
+polygon(x1,y1, border=rgb(226, 208, 0,max=255),lwd=5)
+polygon(x2,y2, border=rgb(129, 215, 66, max=255),lwd=5)
